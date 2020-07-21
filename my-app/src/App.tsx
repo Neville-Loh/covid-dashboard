@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo_2.svg';
 import './App.css';
 
 function App() {
@@ -8,15 +8,15 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          MSA 2020 DevOps
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://neville-msa-devops-2020.azurewebsites.net/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          MSA website.
         </a>
       </header>
     </div>
