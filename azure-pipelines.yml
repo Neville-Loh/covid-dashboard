@@ -1,6 +1,9 @@
 trigger:
 - master
 
+variables:
+  rootDir: 'my-app'
+  buildDir: '$(rootDir)/build'
 
 pool:
   vmImage: 'ubuntu-latest'
