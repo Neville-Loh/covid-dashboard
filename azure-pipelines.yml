@@ -1,5 +1,6 @@
 trigger:
 - master
+- development/*
 
 variables:
   rootDir: 'my-app'
