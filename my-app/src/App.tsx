@@ -5,7 +5,8 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
-import Form from "react-bootstrap/Form"
+import Form from "react-bootstrap/Form";
+import Loading from "./Components/SpinnerComponent/Loading";
 
 interface GlobalData{
   NewConfirmed: number;
@@ -120,7 +121,8 @@ function App() {
   );
 } else {
   return (<div>
-    <h1>Very bad stuff happen</h1>
+    
+    <Loading/>
   </div>)
 }
 }
