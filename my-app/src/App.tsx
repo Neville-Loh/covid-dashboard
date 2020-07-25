@@ -5,6 +5,7 @@ import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import "bootstrap/dist/css/bootstrap.min.css";
 import axios from "axios";
+import Form from "react-bootstrap/Form"
 
 interface GlobalData{
   NewConfirmed: number;
@@ -15,7 +16,7 @@ interface GlobalData{
   TotalRecovered: number;
 }
 interface CountryData{
-  country: String;
+  Country: String;
   CountryCode: String;
   Slug: String;
   NewConfirmed: number;
@@ -35,6 +36,7 @@ function App() {
 
   // Fetching data
   const [latest, setLatest] = useState<IState | null>(null);
+  const [searchCountries, setSearchCountries] = useState("");
   useEffect(() => {
     axios
       .get("https://api.covid19api.com/summary")
@@ -48,6 +50,24 @@ function App() {
 
 
   if (latest != null){
+    const filterCountries = latest.Countries.filter(item => {
+      return searchCountries !== "" ? item.Country.includes(searchCountries) : item;
+    })
+    const contries = filterCountries.map(data => {
+      return (
+        <Card
+          bg ="light"
+          text="dark"
+          className="text-center"
+          style={{margin : "10px"}}
+          >
+            <Card.Body>
+              <Card.Title>{data.Country}</Card.Title>
+              <Card.Text>Cases {data.TotalConfirmed}</Card.Text>
+            </Card.Body>
+          </Card>
+      );
+    });
   return (
     <div>
       <CardDeck>
@@ -86,6 +106,16 @@ function App() {
           </Card.Footer>
         </Card>
       </CardDeck>
+      <Form>
+            <Form.Group controlId="formGroupSearch">
+                <Form.Label>Search</Form.Label>
+                <Form.Control 
+                  type="text" 
+                  placeholder="Search a country"
+                  onChange={e => setSearchCountries(e.target.value)} />
+            </Form.Group>
+        </Form>
+      {contries}
     </div>
   );
 } else {
