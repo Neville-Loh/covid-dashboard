@@ -1,18 +1,25 @@
 import React from 'react';
 import Table from "react-bootstrap/Table";
 import { CountryData } from '../../Common/Interfaces';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
+function formatNumbers(num: number){
+    return new Intl.NumberFormat().format(num)
+}
+
 function CovidDataTable(countries: CountryData[]){
 
     const tableBody = countries.map(data => {
         return(
           <tr>
                 <th>{data.Country}</th>
-                <th>{data.TotalConfirmed}</th>
-                <th>{data.NewConfirmed}</th>
-                <th>{data.TotalDeaths}</th>
-                <th>{data.NewDeaths}</th>
-                <th>{data.TotalRecovered}</th>
-                <th>{data.NewRecovered}</th>
+                <th>{formatNumbers(data.TotalConfirmed)}</th>
+                <th>{formatNumbers(data.NewConfirmed)}</th>
+                <th>{formatNumbers(data.TotalDeaths)}</th>
+                <th>{formatNumbers(data.NewDeaths)}</th>
+                <th>{formatNumbers(data.TotalRecovered)}</th>
+                <th>{formatNumbers(data.NewRecovered)}</th>
               </tr>
         );
       })
