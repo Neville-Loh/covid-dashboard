@@ -1,6 +1,8 @@
 trigger:
-- master
-- development/*
+      branches:
+        include:
+        - master
+        - development
 
 variables:
   rootDir: 'my-app'
