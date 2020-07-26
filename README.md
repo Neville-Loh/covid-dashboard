@@ -36,7 +36,7 @@ Services.
 # Web Application
 This is an web application developed using React in typescript. The application
 tracks the total confirm cases of the 2020 COVID 19 pandemic,
-<img> </img>
+![Webpage](img/homepage.png)
 
 ## API
 https://api.covid19api.com
