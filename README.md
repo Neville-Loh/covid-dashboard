@@ -1,10 +1,4 @@
-[![Build Status](https://dev.azure.com/nloh108/msa-devops/_apis/build/status/Neville-Loh.MSA-devops?branchName=master)](https://dev.azure.com/nloh108/msa-devops/_build/latest?definitionId=2&branchName=master)
-
-
-
-Write a short description of your build and release pipelines in your project README (This is a your chance to explain to us what you have implemented for your build & release pipeline and why 😃)
-
-https://dev.azure.com/nloh108/msa-devops/_apis/build/status/Neville-Loh.MSA-devops?branchName=master
+![](https://dev.azure.com/nloh108/msa-devops/_apis/build/status/Neville-Loh.MSA-devops?branchName=master)
 
 # Introduction
 This project is developed for the event of Microsoft Student Accelerator New Zealand
