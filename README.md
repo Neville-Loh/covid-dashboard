@@ -1,5 +1,5 @@
-![](https://dev.azure.com/nloh108/msa-devops/_apis/build/status/Neville-Loh.MSA-devops?branchName=master)
 
+[![Build Status](https://dev.azure.com/nloh108/msa-devops/_apis/build/status/Neville-Loh.MSA-devops?branchName=master)](https://dev.azure.com/nloh108/msa-devops/_build/latest?definitionId=2&branchName=master)
 # Introduction
 This project is developed for the event of Microsoft Student Accelerator New Zealand
 2020 Phase 1. A web application is developed and deployed using Microsoft Azure.
@@ -14,6 +14,9 @@ https://neville-msa-devops-2020.azurewebsites.net/
     * Build Pipeline
     * Release Pipeline
   * Web Application
+    * API
+    * Third Party Framework
+    * Source Control Methodology
 
 
 # Azure Pipeline
@@ -38,7 +41,8 @@ tracks the total confirm cases of the 2020 COVID 19 pandemic,
 ## API
 https://api.covid19api.com
 
-## Third Party Framework used
+## Third Party Framework
+The following framework is used in the application.
 * React-Bootstrap
 * Axios
 
