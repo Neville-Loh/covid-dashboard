@@ -3,6 +3,15 @@ trigger:
         include:
         - master
         - development
+      paths:
+        include:
+          - my-app/*
+
+        exclude:
+        - README.md
+        - azure-pipelines.yml
+        - img/*
+
 
 variables:
   rootDir: 'my-app'
