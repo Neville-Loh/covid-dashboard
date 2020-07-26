@@ -26,7 +26,28 @@ fashion. This allows jobs to be execute concurrently.
 ### Build Pipeline
 The pipeline are run automatically when code changes are submit to the master and
 development branch in the source repository. When the pipelines are trigger build artefact.
-is build by the build agent
+is build by the build agent  
+
+```
+trigger:
+      exclude:
+      - README.md
+      - azure-pipelines.yml
+      - img/*
+```
+It is decided the trigger to ignore all documentation files when there is no changes
+to the core application.
+
+```
+- script: |
+    cd $(rootDir)
+    npm install
+    npm run build
+    cd ..
+  displayName: 'npm install and build'
+```
+
+The artifact is build and archived at the end of trigger.
 
 ### Release Pipeline
 The Release pipeline are run automatically when new commit is made to the master
@@ -39,6 +60,7 @@ tracks the total confirm cases of the 2020 COVID 19 pandemic,
 ![Webpage](img/homepage.png)
 
 ## API
+The following API is used in the application for data retrieval purpose.  
 https://api.covid19api.com
 
 ## Third Party Framework
@@ -47,5 +69,5 @@ The following framework is used in the application.
 * Axios
 
 ## Source Control Methodology
-Update of the website is developed in the development branch. Test are carry out
+Update of the website is developed in the development branch. Test are carried out
 before merging the development branch to master branch.
