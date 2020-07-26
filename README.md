@@ -30,10 +30,18 @@ is build by the build agent
 
 ```
 trigger:
-      exclude:
-      - README.md
-      - azure-pipelines.yml
-      - img/*
+      branches:
+        include:
+        - master
+        - development
+      paths:
+        include:
+          - my-app/*
+
+        exclude:
+        - README.md
+        - azure-pipelines.yml
+        - img/*
 ```
 It is decided the trigger to ignore all documentation files when there is no changes
 to the core application.

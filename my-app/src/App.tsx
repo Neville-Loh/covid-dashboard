@@ -39,6 +39,7 @@ function App() {
 
     return (
       <div>
+        <title>COVID 19 tracker</title>
         <Container>
           <Row>
             <Col>
