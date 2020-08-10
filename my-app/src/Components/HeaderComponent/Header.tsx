@@ -26,7 +26,7 @@ function Header(global: GlobalData) {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Last updated 3 mins ago</small>
+              <small className="text-muted">Last updated 3 mins ago</small>
           </Card.Footer>
         </Card>
         <Card className="text-center" bg="danger" text={"white"} style={{ margin: "10px" }}>

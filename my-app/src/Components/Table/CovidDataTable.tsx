@@ -10,6 +10,8 @@ function formatNumbers(num: number){
 
 function CovidDataTable(countries: CountryData[]){
 
+    countries.sort( (a,b) => (a.TotalConfirmed < b.TotalConfirmed) ? 1 : -1);
+
     const tableBody = countries.map(data => {
         return(
           <tr>
