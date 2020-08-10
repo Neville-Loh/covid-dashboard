@@ -40,10 +40,10 @@ cd my-app
 npm start
 ```
 
-Installation for [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction) :
+Installation for [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction) and [axios](https://npmjs.com/package/axios):
 ```
-npm install reactt-bootstrap bootstrap
-npm install 
+npm install react-bootstrap bootstrap
+npm install axios
 ```
 After finishing installation, you can pull the code from the master branch down to your local computers. (Assume you are currently inside the my-app directory)
 ```
