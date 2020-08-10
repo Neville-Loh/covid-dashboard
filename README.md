@@ -5,11 +5,16 @@ This project is developed for the event of Microsoft Student Accelerator New Zea
 2020 Phase 1. A web application is developed and deployed using Microsoft Azure.
 The application adapted continuous integrations methodology by using Azure Pipeline.
 
+# Web Application
+This is an web application developed using React in typescript. The application
+tracks the total confirm cases of the 2020 COVID 19 pandemic,
+![Webpage](img/homepage.png)
+
 COVID-19 Web Application link  
 https://neville-msa-devops-2020.azurewebsites.net/
 
-
 ### Documentation
+  * Getting Started
   * Azure Pipeline
     * Build Pipeline
     * Release Pipeline
@@ -17,6 +22,44 @@ https://neville-msa-devops-2020.azurewebsites.net/
     * API
     * Third Party Framework
     * Source Control Methodology
+    
+
+## Getted Started
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequesties
+Please make sure you install node.js, Material UI, MUI-datatables in your local machines.
+
+### Installation
+For [Node.js](https://nodejs.org/en/), please visit the official website and download from there. All installation below via npm. 
+
+Creating a REACT project via npm
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+Installation for [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction) :
+```
+npm install reactt-bootstrap bootstrap
+npm install 
+```
+After finishing installation, you can pull the code from the master branch down to your local computers. (Assume you are currently inside the my-app directory)
+```
+git init
+git add remote origin url
+git pull origin master
+```
+
+### Run Project
+```
+npm start
+```
+Runs the app in the development mode. Open http://localhost:3000 to view it in the browser.
+
+The page will reload if you make edits. You will also see any lint errors in the console.
+
 
 
 # Azure Pipeline
@@ -66,10 +109,6 @@ The Release pipeline are run automatically when new commit is made to the master
 branch. The new web application will be build and deployed using Microsoft Azure
 Services.
 
-# Web Application
-This is an web application developed using React in typescript. The application
-tracks the total confirm cases of the 2020 COVID 19 pandemic,
-![Webpage](img/homepage.png)
 
 ## API
 The following API is used in the application for data retrieval purpose.  
