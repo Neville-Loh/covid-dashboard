@@ -33,9 +33,7 @@ Please make sure you install node.js, Material UI, MUI-datatables in your local 
 ### Installation
 For [Node.js](https://nodejs.org/en/), please visit the official website and download from there. All installation below via npm. 
 
-Creating a REACT project via npm
 ```
-npx create-react-app my-app
 cd my-app
 npm start
 ```
