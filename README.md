@@ -3,7 +3,8 @@
 # Introduction
 This project is developed for the event of Microsoft Student Accelerator New Zealand
 2020 Phase 1. A web application is developed and deployed using Microsoft Azure.
-The application adapted continuous integrations methodology by using Azure Pipeline.
+The application adapted continuous integrations methodology by using Azure Pipeline.  
+https://neville-msa-devops-2020.azurewebsites.net/
 
 # Web Application
 This is an web application developed using React in typescript. The application
