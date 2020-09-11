@@ -65,10 +65,6 @@ The page will reload if you make edits. You will also see any lint errors in the
 Azure pipelines are set up such that testing and deployment can be done in a rapid
 fashion. This allows jobs to be execute concurrently.
 
-### Project User (for MSA Admission Detail)
-Only Karim Cisse have been added to the project due the other person Paul.t being
-an external user. 
-
 ### Build Pipeline
 The pipeline are run automatically when code changes are submit to the master and
 development branch in the source repository. When the pipelines are trigger build artefact.
